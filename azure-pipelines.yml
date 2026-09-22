@@ -1,10 +1,10 @@
 # PARTE DEL EXAMEN: complete el Pipeline.
-trigger:
-  on:
-    push: main
+name: Pipeline de CI/CD
 
-pool:
-  vmImage: 'ubuntu-latest'
+on:
+  push:
+    branches:
+      - main
 
 job:
   instalacion:
