@@ -1,0 +1,11 @@
+# PARTE DEL EXAMEN: complete el Pipeline.
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# TODO: configurar Node.js
+# TODO: instalar dependencias
+# TODO: ejecutar pruebas

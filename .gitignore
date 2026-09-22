@@ -1,0 +1,6 @@
+node_modules/
+.exam/*.txt
+.exam/*.log
+.exam/*.json
+.exam/*.lock
+!.exam/.gitkeep

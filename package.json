@@ -1,0 +1,7 @@
+{
+  "name":"techstore-devops-exam",
+  "version":"1.4.2",
+  "description":"Proyecto base UMG - examen práctico DevOps",
+  "main":"src/app.js",
+  "scripts":{"start":"node src/app.js","test":"node test/test.js"}
+}
