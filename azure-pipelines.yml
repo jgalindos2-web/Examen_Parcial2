@@ -1,11 +1,21 @@
 # PARTE DEL EXAMEN: complete el Pipeline.
 trigger:
-- main
+  on:
+    push: main
 
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
-# TODO: configurar Node.js
-# TODO: instalar dependencias
-# TODO: ejecutar pruebas
+job:
+  instalacion:
+    steps:
+        - uses: azure/nodejs@v6
+        - uses: azure/checkout@v6
+        # TODO: instalar dependencias
+        - name: "Instalar dependencias"
+        - run: "npm install"
+        # TODO: ejecutar pruebas
+        - name: "Ejecutar Pruebas"
+        - run: "npm test"
+
+
